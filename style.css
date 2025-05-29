@@ -1,0 +1,168 @@
+:root {
+    --bg: #e0e5ec;
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-dark: #2e2e2e;
+    --accent: #00bcd4;
+    --shadow-light: rgba(255, 255, 255, 0.8);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    color: var(--text-dark);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .app-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--glass-border);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(white);
+    margin-bottom: 20px;
+  }
+  
+  .reading-goal input {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 200px;
+    box-shadow: inset 3px 3px 8px var(--shadow-dark),
+                inset -3px -3px 8px var(--shadow-light);
+    transition: all 0.2s ease;
+  }
+  
+  .reading-goal input:focus {
+    border-color: var(--accent);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    color: #333;
+    border-left: 5px solid var(--accent);
+    padding-left: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  li:hover {
+    transform: translateY(-4px);
+  }
+  
+  .add-book input,
+  .add-book textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 2px 2px 4px rgba(255,255,255,0.5),
+                inset -2px -2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .add-book button {
+    padding: 12px 20px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-book button:hover {
+    background: #0097a7;
+  }
+  
+  button {
+    margin: 5px 5px 0 0;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  .community textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ccc;
+  }
+  
+  .community button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .community button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .app-container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
